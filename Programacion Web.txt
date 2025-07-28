@@ -1,0 +1,25 @@
+23/07/2025
+
+HTML: Lenguaje de Marcado de Hipertexto
+
+SEO: estructura estratégica de una página web
+
+ETIQUETAS:
+
+Títulos, subtítulos: <h1></h1> hasta <h6></h6>
+
+<header>		<
+<nav>			<< Estructura en html5 dentro del body
+<main>			<
+<footer>		<
+
+Sitio web: conexión a la nube, una aplicación web alojada en un servidor
+
+manteniendo alt: permite generar varios cursores, escribir en varias partes indicadas a la vez
+
+comentar: ctrl + k + c
+descomentar: ctlr + k + u
+
+Internet: Se trata de uan red de equipos de cálculo, que se relacionan entre sí a través del uso de un lenguaje universal
+
+lorem* x = escribir texto de prueba con x repeticiones
