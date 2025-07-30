@@ -1,0 +1,14 @@
+#padre{
+    display: flex;
+    height: 100vh;
+    background-color: yellow;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}

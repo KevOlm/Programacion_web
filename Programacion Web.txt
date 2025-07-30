@@ -23,3 +23,39 @@ descomentar: ctlr + k + u
 Internet: Se trata de uan red de equipos de cálculo, que se relacionan entre sí a través del uso de un lenguaje universal
 
 lorem* x = escribir texto de prueba con x repeticiones
+
+__________________________________________________________________
+
+28/07/2025
+
+padding: distancia con respecto a la margen
+
+padding: 2px (arriba) 1px (abajo) 1px (izquierda) 1px (derecha)
+
+padding: 2px (verticar) 1px (horizontal)
+
+padding: 2px (todos los bordes)
+
+display: inline; (todo en una linea, junto)
+
+unidad de medida: 
+absolutas: cm, px, entre otros similares
+relativas:
+rem=		em= tamaño de la letra M, tamaño que ocupa la m (investigar)
+
+-------------------------------------------------------------------
+30/07/2025
+
+Flexbox: En forma normal, los objetos tienen un 
+
+display flex; indicará que sus hijos serán "flexibles".
+
+flex-direction row/column: elegir dirección
+flex-wrap wrap/nowrap: multilinea cuando llegue al limite, con wrap se distribuyen mientras se agregan elementos, con nowrap se aplastan sin desplazarse, se angostan para ocupar el espacio de una linea, se comprimen las cajas
+
+flex-flow: abreviacion de flex-direction y flex-wrap
+justify-content: alinear horizontalmente a los hijos(row) o verticalmente (column)
+align-items: para alinear de forma vertical
+gap: espacio fijo entre los contenedores, pero solo sirve si esta activado wrap
+calc(): operaciones en parametros de css para medidas
+overflow: evita que el contenido se desborde del contenedor

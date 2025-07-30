@@ -1,3 +1,6 @@
+*{
+    border: 5px solid black;
+}
 #caja1{
     background-color: red;
     width: 200px;
@@ -23,7 +26,7 @@
 a{
     font-size: 30px;
     padding: 20px;
-    padding-top: 400px; /* No funciona porque no se puede aplicar en elementos inline*/
+    padding-top: 400px; /* los "a" son por defecto inline. Este atributo no funciona porque no se puede aplicar en elementos inline*/
 }
 .bordeAncho{
     border: 10px solid black;
