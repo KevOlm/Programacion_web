@@ -59,3 +59,12 @@ align-items: para alinear de forma vertical
 gap: espacio fijo entre los contenedores, pero solo sirve si esta activado wrap
 calc(): operaciones en parametros de css para medidas
 overflow: evita que el contenido se desborde del contenedor
+----------------------------------------------------------------
+04/08/2025
+
+Position
+static
+relative
+absolute
+sticky
+fixed: mezcla de absolute y sticky
