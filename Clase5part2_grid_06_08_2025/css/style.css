@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer aside";
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+@media(max-width:720px){
+    #container{               /* Diseño Responsivo para movil (debe hacerse como diseño principal, esto es solo para el ejemplo) */
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "aside aside"
+            "footer footer";
+    }
+}

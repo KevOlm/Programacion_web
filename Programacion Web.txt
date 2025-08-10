@@ -68,3 +68,39 @@ relative
 absolute
 sticky
 fixed: mezcla de absolute y sticky
+----------------------------------------------------------------
+06/08/2025
+
+Grid: Es un sistema de maquetación muy versátil que está disponible en css
+flexbox funciona en una dimensión
+css grids funciona en dos dimensiones: filas y columnas
+
+grid-template-colums
+grid-template-rows	<---- Para asignar los espacios en la grilla
+grid-template-areas
+column-gap		<---- Para asignar espacio entre ellos
+row-gap
+
+justify-self		
+align-self		<---- Funciona igual que justify-content y align-items, pero es mejor usar flex
+
+Diseño Responsivo (responsive design): se refiere a la idea de que un sitio web debería mostrarse igualmente bien en todo tipo de dispositivo, desde monitores de pantalla panorámica hasta teléfonos móviles. Es importante empezar el diseño a partir de vista de movil, e ir escalando a tablets y escritorio, buena práctica.
+
+Breakpoints: Categorías, casi estándares para definir lo que es cada dispositivo a traves de su medida en pixeles:
+320px: Para dispositivos con pantallas pequeñas, como telefonos en modo vertical
+480px:  para dispositivos con pantallas pequeñas, como telefonos en modo horizontal
+
+Mobile first:
+@media (min-width: ...){...}
+Mobile first ------------------> Desktop last
+
+.miestilo{
+	background-color: green;
+}
+@media (max-width: 480px) {
+	.miestilo{
+		background-color: red;
+	}
+}
+
+Nota: en el ejercicio de la clase 5 parte 2, se empieza dejando el diseño de escritorio afuera y el de movil adentro de los media, debe ser al revés
