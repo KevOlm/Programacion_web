@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black 1px;
+}
+
+#container1 {
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    flex-direction: column;
+}
+#container_minibox {
+    display: grid;
+    width: 100%;
+    height: 220vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "minibox_1"
+        "minibox_2"
+        "minibox_3"
+        "minibox_4";
+}
+#container2 {
+    display: flex;
+    width: 100%;
+    height: 440vh;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+}
+nav {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 234, 241);
+}
+#minibox_1 {
+    grid-area: minibox_1;
+    background-color: rgb(27, 75, 117);
+}
+#minibox_2 {
+    grid-area: minibox_2;
+    background-color: rgb(54, 118, 173);
+}
+#minibox_3 {
+    grid-area: minibox_3;
+    background-color: rgb(194, 213, 229);
+}
+#minibox_4 {
+    grid-area: minibox_4;
+    background-color: rgb(136, 182, 223);
+}
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56, 72, 87);
+}
+
+@media(0px<= width <=480px) {  /*Diseño Movil*/
+    #container1 {
+        display: flex;
+        width: 100%;
+        height: 110vh;
+        gap:0px;
+    }
+    #container_minibox {
+        display: grid;
+        width: 100%;
+        height: 220vh;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "minibox_1"
+            "minibox_2"
+            "minibox_3"
+            "minibox_4";
+    }
+    #container2 {
+        display: flex;
+        width: 100%;
+        height: 440vh;
+    }
+    header {
+        width: 80%;
+        height: 20%;
+    }
+    nav {
+        width: 20%;
+        height: 20%;
+        background-color: white;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(226, 234, 241);
+    }
+}
+
+@media(480px< width <=1024px) {  /*Diseño Tablet*/
+    #container1 {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+    #container_minibox {
+        display: grid;
+        width: 100%;
+        height: 70vh;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "minibox_1 minibox_2"
+            "minibox_3 minibox_4";
+    }
+    #container2 {
+        display: flex;
+        width: 100%;
+        height: 240vh;
+    }
+}

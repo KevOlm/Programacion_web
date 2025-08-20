@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (0px<=width<=768px) {
+    body{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        background-color: darkgreen;
+    }
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        height: 5%;
+        background-color: red;
+    }
+    main{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    section{
+        width: 96%;
+        height: 47%;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2%;
+    }
+    article{
+        width: 96%;
+        height: 47%;
+        display: flex;
+        background-color: grey;
+    }
+    aside{
+        width: 100%;
+        height: 5%;
+        background-color: lightblue;
+    }
+    footer{
+        width: 100%;
+        height: 10%;
+        background-color: blueviolet;
+    }
+}
+@media (width>768px) {
+    body{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 2fr 1fr 10fr 2fr;
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "aside main"
+            "footer footer"
+        ;
+    }
+    header{
+        display: flex;
+        grid-area: header;
+        justify-content: center;
+        align-items: center;
+        background-color: darkgreen;
+    }
+    .box1{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .box2{
+        width: 40px;
+        height: 40px;
+        background-color: yellow;
+    }
+    nav{
+        display: flex;
+        grid-area: nav;
+        background-color: red;
+    }
+    main{
+        display: flex;
+        grid-area: main;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3% 6%;
+    }
+    section{
+        width: 94%;
+        height: 42%;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 3% 5%;
+    }
+    article{
+        width: 45%;
+        height: 84%;
+        display: flex;
+        background-color: grey;
+    }
+    aside{
+        grid-area: aside;
+        background-color: lightblue;
+    }
+    footer{
+        grid-area: footer;
+        background-color: blueviolet;
+    }
+}

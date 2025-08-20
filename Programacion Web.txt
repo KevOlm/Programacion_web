@@ -104,3 +104,18 @@ Mobile first ------------------> Desktop last
 }
 
 Nota: en el ejercicio de la clase 5 parte 2, se empieza dejando el diseño de escritorio afuera y el de movil adentro de los media, debe ser al revés
+
+###################################################################################################
+Para el 27 de Agosto: Crear Portafolio Web (20% del curso) de una sola página
+Hasta el 26 de agosto a las 12 de la noche
+En un repositorio nuevo: llamarlo "web1_olmos_kevin", debe ser público
+se evalúa la estructura de la pagina web, el repositorio
+
+settings>pages>branch: main (esto genera un url dominio para visitar la pagina web) la url toca enviarla al correo electrónico del profesor
+vercel permite subir aplicaciones web con dominio gratis permanente, guardarlo para el proyecto final
+
+Debe contener al menos un enlace a una red social
+
+Nota: El parcial es para el 1ero de septiembre
+para el parcial se deben usar etiquetas semánticas oficiales (header, nav, etc)
+Dentro del main, las siguientes etiquetas jerárquicamente son section y article
