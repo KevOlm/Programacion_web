@@ -1,0 +1,22 @@
+.container{
+    background-color: blue;
+}
+.container-fluid{
+    background-color: red;
+}
+
+.fila{
+    background-color: rgb(24, 109, 109);
+}
+.fila2{
+    background-color: rgb(72, 77, 77);
+}
+
+.columna{
+    background-color: cyan;
+    border: solid black 1px;
+}
+.columna2{
+    background-color: rgb(83, 88, 88);
+    border: solid black 1px;
+}

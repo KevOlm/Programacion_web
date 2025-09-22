@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Gradientes */
+/* #box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to bottom, yellow 50%, blue, red);
+    background-image: radial-gradient(circle, yellow 50%, blue, red);
+    background-image: radial-gradient(farthest-corner at 50% 150%, yellow 50%, blue, red);
+} */
+
+/* Transformaciones */
+/* #box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate(100px, 100px) rotateZ(45deg) scale(0.8, 0.8) skew(20deg, 20deg);
+} */
+
+/* Transiciones */
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    &:hover{
+        background-color: blue;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+/* Animaciones */
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}

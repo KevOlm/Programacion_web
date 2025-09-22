@@ -119,3 +119,24 @@ Debe contener al menos un enlace a una red social
 Nota: El parcial es para el 1ero de septiembre
 para el parcial se deben usar etiquetas semánticas oficiales (header, nav, etc)
 Dentro del main, las siguientes etiquetas jerárquicamente son section y article
+
+###########################################################################################
+03/09/2025
+
+Librerias: es una oclección de estilos css reutilizables que puedes incorporar a tu proyecto para agregar funcionalidades específicas. Estas librerías se centran en resolver problemas concretos, como animaciones, iconos, tipografía o diseño de componentes individuales.
+
+Framework: es un conjunto completo de herramientas y componentes prediseñados que te ofrecen una estructura sólida para construir interafces de usuario (Tailwind CSS, Bootstrap, bulma, foundation 6)
+
+	Ofrece:
+	- Sistema de cuadrículas
+	- Componentes prediseñados
+	- Utilidades
+	- Responsividad
+
+Bootstrap:
+- Gran comunidad
+- Personalizable
+
+Entregable 2 = 17/09/2025
+
+coderhub.run = Hay que hacer un sitio web con al menos 3 paginas que implemente librerias, animaciones y altamente estético, debe ser de una pagina de una empresa de desarrollo de software
