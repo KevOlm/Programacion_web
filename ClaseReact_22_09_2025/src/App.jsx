@@ -1,84 +1,35 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react'
+import Header from './components/header/header'
+import Footer from './components/footer/footer'
+import CardSection from './components/card_section/card_section'
+import Accordion from './components/accordion/accordion'
+import Button from '@mui/material/Button'
+import './App.css'
 
-function App() {
-  const [form, setForm] = useState({
-    nombre: '',
-    apellido: '',
-    email: '',
-    telefono: '',
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+const App = () => {
+  const [variable, setVariable] = useState('Hola Mundo')
+  useEffect(() => {
+    console.log('Componente montado')
+  }, [])
 
   return (
-    <div style={{ maxWidth: 400, margin: '2rem auto', fontFamily: 'sans-serif' }}>
-      <h2>Formulario de Datos Personales</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            value={form.nombre}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Apellido:</label>
-          <input
-            type="text"
-            name="apellido"
-            value={form.apellido}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Teléfono:</label>
-          <input
-            type="tel"
-            name="telefono"
-            value={form.telefono}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-      {submitted && (
-        <div style={{ marginTop: '1rem', background: '#e0ffe0', padding: '1rem' }}>
-          <h3>Datos enviados:</h3>
-          <p><strong>Nombre:</strong> {form.nombre}</p>
-          <p><strong>Apellido:</strong> {form.apellido}</p>
-          <p><strong>Email:</strong> {form.email}</p>
-          <p><strong>Teléfono:</strong> {form.telefono}</p>
-        </div>
-      )}
-    </div>
-  );
+    <>
+      <Header/>
+      <div className="boton">
+        <Button variant="outlined" onClick={() => setVariable('Hola')}>Cambiar Variable</Button>
+      </div>
+      <main>
+        <section id="card_section">
+          <CardSection data={{ content: 'The domestic cat is a small, typically furry carnivore.'}}/>
+          <CardSection data={{ title: variable, content: 'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica.'}}/>
+        </section>
+        <section id="accordion_section">
+          <Accordion/>
+        </section>
+      </main>
+      <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App

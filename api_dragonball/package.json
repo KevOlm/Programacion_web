@@ -1,5 +1,5 @@
 {
-  "name": "clasereact-22-09-2025",
+  "name": "api_dragonball",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,8 +12,10 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
+    "install": "^0.13.0",
+    "mui": "^0.0.1",
+    "npm": "^11.6.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

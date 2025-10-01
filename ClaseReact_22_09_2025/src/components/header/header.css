@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    color: white;
+    height: 100px;
+}
+
+#icono-header{
+    font-size: 3rem;
+    color: white;
+}
